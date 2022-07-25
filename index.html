@@ -4,9 +4,183 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Brandon Dykun</title>
+    <link rel="icon" type="image/x-icon" href="./static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/131ba82f3a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Coming soon!</h1>
+    <header class="primary-header">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </header>
+    <main class="primary-content">
+      <div class="intro-container">
+        <div class="intro-text-container">
+          <div class="large-text main-name">Brandon Dykun</div>
+          <div class="medium-text">React/Full Stack Software Engineer</div>
+        </div>
+      </div>
+      <div id="about" class="about-container">
+        <div class="large-text section-title">About</div>
+        <div class="flex-row">
+          <div class="about-me-text-container">
+            <div class="about-me-text medium-text">
+              My name is Brandon. I am a veteran, college grad, and React/Full
+              Stack Software Engineer. After 3 combat deployments, I decided to
+              get a degree in Geospatial Information Science. It was awesome! I
+              got to work with cutting edge software and do a ton of cool
+              projects like making a 3D model of our campus with drone imagery!
+              You can check it out
+              <a
+                href="https://www.iup.edu/geoplanning/news/2020/05/geography-and-regional-planning-students-develop-3-d-model-of-iup-campus.html"
+                class="iup-link"
+                >here</a
+              >! While in school, I took a python class and well...
+            </div>
+            <div class="about-me-text medium-text">
+              I immediately knew that coding was my future! I enrolled in a Full
+              Stack Software Engineering bootcamp and loved every minute of it!
+              Since the bootcamp, I've been writing code constantly trying to
+              hone my skills and learn new ones along the way! I am looking for
+              a Jr React or Full Stack Dev position to get my career off the
+              ground and learn along side professionals!
+            </div>
+          </div>
+          <div class="skills-list-container medium-text">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Django Rest Framework</li>
+              <li>Postgres</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="projects" class="projects-container">
+        <div class="large-text section-title">Projects</div>
+        <div class="projects-preview-container">
+          <div class="project-container">
+            <h3 class="project-title">Budget App</h3>
+            <div class="image-container">
+              <img src="./static/budget.png" alt="" class="project-image" />
+            </div>
+            <div class="image-links-container">
+              <a
+                href="https://github.com/brandondykun/budget-app"
+                class="image-link"
+                >View GitHub</a
+              >
+              <a
+                href="https://budget-app-brandondykun.vercel.app/login"
+                class="image-link"
+                >View Live</a
+              >
+            </div>
+            <p class="project-description">
+              An app for monitoring income and savings, adding planned expenses,
+              and setting reminders. Savings can be filtered by year and month
+              to easily see how savings compare from month to month. This is a
+              full CRUD app that requires authentication.
+            </p>
+          </div>
+
+          <div class="project-container">
+            <h3 class="project-title">Wordle Clone (but with a theme!)</h3>
+            <div class="image-container">
+              <img
+                src="./static/wordle.png"
+                alt="Image of a wordle clone."
+                class="project-image"
+              />
+            </div>
+            <div class="image-links-container">
+              <a
+                href="https://github.com/brandondykun/fist_wordle"
+                class="image-link"
+                >View GitHub</a
+              >
+              <a
+                href="https://brandondykun.github.io/fist_wordle/"
+                class="image-link"
+                >View Live</a
+              >
+            </div>
+            <p class="project-description">
+              FIST Wordle is a side project that was built for my fellow
+              military team members. The game uses only military specific words,
+              and when a word is guessed correctly, the technical definition is
+              displayed. It was designed to be simple, fun, and educational.
+            </p>
+          </div>
+          <div class="project-container">
+            <h3 class="project-title">Password Creation Validator</h3>
+            <div class="image-container">
+              <img src="./static/login.png" alt="" class="project-image" />
+            </div>
+            <div class="image-links-container">
+              <a
+                href="https://github.com/brandondykun/signup-verification"
+                class="image-link"
+                >View GitHub</a
+              >
+              <a
+                href="https://signup-verification.vercel.app/"
+                class="image-link"
+                >View Live</a
+              >
+            </div>
+            <p class="project-description">
+              This is a fun registration password verification project. It uses
+              regex to ensure that the registration password meets certain
+              criteria and alerts the user if it doesn't. It also uses React
+              Context to pass the sign up information between components!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact-container">
+        <div class="large-text section-title">Contact</div>
+
+        <div class="contact-list">
+          <h2>Want to know more? Send me an email or find me on LinkedIn!</h2>
+          <div class="contact-links-container">
+            <div class="contact-link-container">
+              <a href="mailto:brandon.dykun@gmail.com" class="contact-link">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <span class="contact-text">brandon.dykun@gmail.com</span></a
+              >
+            </div>
+            <div class="contact-link-container">
+              <a href="https://www.linkedin.com/in/bdykun" class="contact-link"
+                ><i class="fa-brands fa-linkedin fa-2x"></i
+                ><span class="contact-text">LinkedIn</span></a
+              >
+            </div>
+            <div class="contact-link-container">
+              <a href="https://github.com/brandondykun" class="contact-link"
+                ><i class="fa-brands fa-github fa-2x"></i
+                ><span class="contact-text">GitHub</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="primary-footer">Thanks for stopping by!</footer>
   </body>
 </html>
