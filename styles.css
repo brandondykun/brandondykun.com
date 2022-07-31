@@ -181,7 +181,7 @@ body {
 }
 
 .intro-text-container {
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-name: fade-in;
 }
 
@@ -229,7 +229,7 @@ body {
   }
 
   .about-me-text {
-    margin: 2rem;
+    margin: 2rem 2rem 3rem 2rem;
   }
 
   .skills-list-container {
@@ -241,3 +241,10 @@ body {
     margin: .5rem 0;
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .about-me-text {
+    line-height: 2;
+  }  
+}
+
