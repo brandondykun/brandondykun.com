@@ -72,6 +72,9 @@ body {
 
 .about-main-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .about-container {
@@ -123,8 +126,7 @@ body {
 }
 
 .project-image {
-  height: 200px;
-  max-width: 300px;
+  max-width: 200px;
   margin: 1rem 0;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -194,11 +196,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.intro-text-container {
-  animation-duration: 5s;
-  animation-name: fade-in;
-}
-
 .iup-link {
   color: var(--white);
 }
@@ -207,12 +204,17 @@ body {
   color: var(--hover-color);
 }
 
-@keyframes fade-in {
-  from {
-    color: black;
+
+
+
+@media only screen and (min-width: 350px) {
+  .intro-text-container {
+    margin-left: 7vw;
   }
-  to {
-    color: var(--white)
+
+  .project-image {
+    height: 200px;
+    max-width: 300px;
   }
 }
 
@@ -224,7 +226,11 @@ body {
 
 @media only screen and (min-width: 800px) {
   .large-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .auto-type, .typed-cursor {
+    font-size: 2rem;
   }
 
   .medium-text {
@@ -234,6 +240,12 @@ body {
   .flex-row {
     display: flex;
     align-items: center;
+  }
+
+  .about-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
   }
 
   .about-me-text-container {
