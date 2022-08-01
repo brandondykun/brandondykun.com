@@ -17,6 +17,7 @@
       src="https://kit.fontawesome.com/131ba82f3a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <header class="primary-header">
@@ -28,7 +29,7 @@
       <div class="intro-container">
         <div class="intro-text-container">
           <div class="large-text main-name">Brandon Dykun</div>
-          <div class="medium-text">React/Full Stack Software Engineer</div>
+          <div class="medium-text"><span class="auto-type"></span></div>
         </div>
       </div>
       <div id="about" class="about-container">
@@ -182,5 +183,13 @@
       </div>
     </main>
     <footer class="primary-footer">Thanks for stopping by!</footer>
+
+    <script>
+      const typed = new Typed(".auto-type", {
+        strings: ["<span>React/Full Stack Software Engineer</span>"],
+        typeSpeed: 100,
+        autoInsertCss: true,
+      });
+    </script>
   </body>
 </html>
